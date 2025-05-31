@@ -1,0 +1,12 @@
+@media screen and (max-width:1000px) {
+    #topNav #logoNav {
+        margin-right: 20px;
+        padding-top:10px;
+        padding-bottom: 10px;
+    }
+    #filterHolder {
+        margin:0px;
+        padding:0px;
+        padding-left: 10px;
+    }
+}

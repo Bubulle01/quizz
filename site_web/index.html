@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+	<head>
+			<link rel="stylesheet" type="text/css" href="css.css">
+            <link rel="stylesheet" type="text/css" href="adapt.css">
+			<meta charset="utf-8" />
+			<title>Ultraquizz.biz</title>
+			<meta name="description" content="Des quiz fun 100% gratuits!" />
+			<meta name="keywords" content="quiz fun test " />
+			<script src="js.js"></script>
+			<link rel="icon" href="./i/fav.webp" type="image/x-icon">
+	</head>
+    <body id="index">
+		<nav id="topNav">
+			<a class="title shadow" id="logoNav" href="./">ULTRAQUIZZ</a>
+			<div id="searchCtn">
+                <input class="searchbar" type="text" placeholder="Rechercher un quiz..."/>
+                <button>Go</button>
+            </div>
+            <a class="login" href="./login.html"><button id="topRightBtnTxt">Connection / Créer un Compte</button></a>
+        </nav>
+        <div id="belowNavCtn" class="containerMargin">
+            <header>
+                <p>Bienvenue sur Ultraquizz, le site de 
+                    quiz #1 de Lannion Trégor Communauté 
+                    (et ses magnifiques alentours) ! Nous 
+                    avons plein de quiz disponibles pour 
+                    tous, sur une grande variété de thèmes. 
+                    Essayez de conquérir le #1 sur le 
+                    leaderboard des quiz (si vous en êtes 
+                    capables.)<br>
+                </p>
+            </header>
+            <main>
+                <div id="searchfilterHolder">
+                    <div id="searchHolder">
+                        <table id="queryResults" class="table-m-set">
+                            <thead>
+                                <tr>
+                                    <th colspan="3" class="bigfont">Résultats : 
+                                        <span id="searchQuery" class="ignore-m-set bigfont">Récents</span>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>Catégorie</th>
+                                    <th>Quiz</th>
+                                    <th>Tentatives</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="t-cge">Culture Générale</td>
+                                    <td><span><a href="/quiz.html" class="trnc">test of all time</a></span></td>
+                                    <td>1.4K</td>
+                                </tr>
+                                <tr>
+                                    <td class="t-lan">Langues</td>
+                                    <td><span><a href="/quiz.html" class="trnc">Devine la langue</a></span></td>
+                                    <td>4.5K</td>
+                                </tr>
+                                <tr>
+                                    <td class="t-cmo">Culture Moderne</td>
+                                    <td><span><a href="/quiz.html" class="trnc">Connais-tu le lore de Denis Vaillant?</a></span></td>
+                                    <td>932583T</td>
+                                </tr>
+                                <tr>
+                                    <td class="t-aut">Autres</td>
+                                    <td><span><a href="/quiz.html" class="trnc">Top des rappeurs qui se sont fait djoufara</a></span></td>
+                                    <td>1M</td>
+                                </tr>
+                                <tr>
+                                    <td class="t-sci">Sciences</td>
+                                    <td><span><a href="/quiz.html" class="trnc">Nomme l'élément chimique</a></span></td>
+                                    <td>1.22M</td>
+                                </tr>
+                                <tr>
+                                    <td class="t-spo">Sport</td>
+                                    <td><span><a href="/quiz.html" class="trnc">Les footballeurs les plus guez il me faut un titre long bonjour bonsoir comment allez vous bien et vous ouais</a></span></td>
+                                    <td>339K</td>
+                                </tr>
+                                <tr>
+                                    <td class="t-geo">Géographie</td>
+                                    <td><span><a href="/quiz.html" class="trnc">Capitale de pays</a></span></td>
+                                    <td>23K</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="filterHolder">
+                        <p class="bigfont no-m-b">Filtres:</p>
+                        <form action="/filtres.php">
+                            <div id="filterByTypeHolder">
+                                <input type="checkbox" id="type1" name="type1" value="Sport">
+                                <label for="type1"> Sport</label><br>
+                                <input type="checkbox" id="type2" name="type2" value="Culture Moderne">
+                                <label for="type2"> Culture Moderne</label><br>
+                                <input type="checkbox" id="type3" name="type3" value="Culture Générale">
+                                <label for="type3"> Culture Générale</label><br>
+                                <input type="checkbox" id="type4" name="type4" value="Langues">
+                                <label for="type4"> Langues</label><br>
+                                <input type="checkbox" id="type5" name="type5" value="Géographie">
+                                <label for="type5"> Géographie</label><br>
+                                <input type="checkbox" id="type6" name="type6" value="Histoire">
+                                <label for="type6"> Histoire</label><br>
+                                <input type="checkbox" id="type7" name="type7" value="FauneetFlore">
+                                <label for="type7"> Faune & Flore</label><br>
+                                <input type="checkbox" id="type8" name="type8" value="Sciences">
+                                <label for="type8"> Sciences</label><br>
+                                <input type="checkbox" id="type9" name="type9" value="Autres">
+                                <label for="type9"> Autres</label><br>
+                            </div>
+                            <p class="bigfont no-m-b">Trier par:</p>
+                            <div id="radioFilterHolder">
+                                <input type="radio" id="age1" name="age" value="30" checked="checked">
+                                <label for="age1">Récents</label><br>
+                                <input type="radio" id="age2" name="age" value="60">
+                                <label for="age2">Popularité</label><br>  
+                                <input type="radio" id="age3" name="age" value="100">
+                                <label for="age3">Ordre Alphabétique</label><br><br>
+                            </div>
+                            
+                            <input class="pretend-button" type="submit" value="Filtrer">
+                        </form>
+                    </div>
+                </div>
+                
+    
+            </main>
+        </div>
+        <footer>
+            <p>Ultraquizz par Ashley Brouard, Manech Jego Dufau et Doryan Berg en 1A2 Info à l'IUT de Lannion</p>
+            <p>Je ne sais pas quoi mettre dans ce beau footer.</p>
+        </footer>
+    </body>
+</html>
